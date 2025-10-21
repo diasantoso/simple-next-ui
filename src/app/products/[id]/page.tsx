@@ -23,7 +23,9 @@ export default function Detail({ params }: { params: Promise<{ id: string }> }) 
 
     return (
         <div className="w-full max-w-7xl m-auto">
-            <h2 className="text-center font-bold text-3xl py-3 mb-20">Product Detail</h2>
+            <div className="caption-top py-5 font-bold text-2xl text-center">
+                Product Detail
+            </div>
             <div className="flex flex-wrap mb-5">
                 <div className="w-32 mr-52">ID</div>
                 <div className="w-96 font-bold">{getProductsById()?.id}</div>
