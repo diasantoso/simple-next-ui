@@ -21,7 +21,7 @@ export default function Products() {
         setProducts(data.result.products);
         if (!title || title === '') return
         setProducts(products.filter((product: ProductModel) =>
-            product.title.includes(String(title))));
+            product.title.toLowerCase().includes(title.toLowerCase())));
     }
 
     const searchProductsByCategory = (category: String) => {
